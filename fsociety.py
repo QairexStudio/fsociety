@@ -1155,7 +1155,7 @@ def wppluginscan():
             conn.request('HEAD', "/wp-content/plugins/" + dir)
             resp = conn.getresponse().status
         except Exception as message:
-            print("Cant Connect:" + message) 
+            print("Cant Connect:" + message)
             pass
 
     def timer():
@@ -1491,7 +1491,7 @@ class Fscan:
             page += 50
         lista = unique(lista)
         clearScr()
-        print('[*] Found ' + len(lista) + ' Joomla Website\n')
+        print('[*] Found ' + str(len(lista)) + ' Joomla Website\n')
         for site in lista:
             print site
 ############################
